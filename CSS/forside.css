@@ -11,6 +11,8 @@
   gap: 2rem;
 }
 
+
+
 .tema_button,
 .tema_button:visited {
   display: inline-flex;
@@ -26,9 +28,13 @@
   border-radius: 100px;
   text-decoration: none;
   cursor: pointer;
+  width: auto;
+  justify-content: space-between;
 }
 
 .tema_button .button_arrow {
+  margin-left: auto;
+  display: inline-flex;
   margin-left: auto;
 }
 

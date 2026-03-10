@@ -71,12 +71,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
   color: #fff;
   position: sticky;
   top: 0;
-  background-color: var(--background-color);
+  z-index: 1000;
+  /* keep header above page content */
+  background-color: var(--background-color), 0.99;
+  backdrop-filter: blur(50px);
+
 }
 
 .logo-wrapper img {
@@ -102,8 +106,6 @@ header {
 /* BASE */
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
   width: 100%;
   margin: 0 auto;

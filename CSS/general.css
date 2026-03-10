@@ -170,7 +170,8 @@ a {
 
 /******************************************************** L **************************************************/
 @media (min-width: 1200px) {
-  /********************* General ******************/
+
+  /* /Fonts/ */
 
   h1 {
     font-size: var(--h1-size-l);
@@ -192,4 +193,41 @@ a {
   a {
     font-size: var(--p-size-l);
   }
+
+
+  /* structure  */
+  body :not(footer) {
+    padding: 0 2rem;
+  }
+
+  .divider {
+    margin: 0 2rem;
+  }
+
+  /* grid */
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .intro {
+    grid-column: 1 / -1;
+  }
+
+  main>h3 {
+    grid-column: 1 / -1;
+  }
+
+  .tema_button {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+
+
+  /* buttons */
+
+
+
 }
