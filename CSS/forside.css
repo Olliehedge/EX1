@@ -2,13 +2,20 @@
 .tema_section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#temaer {
+  margin-bottom: 1rem;
 }
 
 
@@ -37,6 +44,7 @@
   display: inline-flex;
   margin-left: auto;
 }
+
 
 .tema_button:hover {
   filter: brightness(1.05);

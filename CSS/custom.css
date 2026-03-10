@@ -76,8 +76,7 @@ header {
   color: #fff;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  /* keep header above page content */
+  z-index: 10;
   background-color: var(--background-color), 0.99;
   backdrop-filter: blur(50px);
 
@@ -88,6 +87,11 @@ header {
   width: auto;
   display: block;
   margin-left: 1rem;
+  transition: opacity 150ms ease;
+}
+
+.logo-wrapper img:hover {
+  opacity: 0.7;
 }
 
 .nav-header {
@@ -101,6 +105,12 @@ header {
 
 .nav-header a {
   text-transform: uppercase;
+  transition: opacity 150ms ease;
+}
+
+.nav-header a:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 /* BASE */
@@ -148,7 +158,7 @@ main {
   text-decoration: underline;
 }
 
-/* current page */
+/* nuværende side */
 .breadcrumbs li[aria-current="page"] {
   color: var(--text-color2);
   font-weight: 600;
@@ -180,10 +190,12 @@ a,
 a:visited {
   color: var(--text-color1);
   text-decoration: none;
+  transition: opacity 150ms ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  opacity: 0.7;
 }
 
 /* Dividers */
