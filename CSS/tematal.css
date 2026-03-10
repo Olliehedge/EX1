@@ -1,3 +1,4 @@
+/* Sites-sektion: 2-kolonne grid (indhold/label), let indmad, tynde top/bund linjer */
 .sites {
   padding: 0 0.2rem;
   display: grid;
@@ -6,6 +7,7 @@
   border-bottom: 0.5px solid var(--background-light);
 }
 
+/* Links-liste: 1 kolonne, vertikalt gap, lille venstreforskydning */
 .sites_links {
   padding: 0.5rem 0;
   display: grid;
@@ -14,6 +16,7 @@
   transform: translateX(1px);
 }
 
+/* Opgaver-sektion: samme 2-kolonne grid som sites, bundlinje */
 .tasks {
   padding: 0 0.2rem;
   display: grid;
@@ -22,21 +25,24 @@
 }
 
 
+/* Opgaver-liste: 1 kolonne, vertikal stak, venstrekant markerer området */
 .tasks_tasks {
   display: grid;
   grid-template-columns: 1fr;
   border-left: 0.5px solid var(--background-light);
 }
 
+/* Sidste item i opgaver: topkant for visuel adskillelse */
 .tasks_tasks :last-child {
   border-top: 0.5px solid var(--background-light);
 }
 
+/* Opgave-tekst: polstring så teksten ikke klistrer til kanten */
 .tasks_tasks p {
   padding: 0.5rem;
 }
 
-/* task knapper */
+/* Task-knapper: pill-form, accent-baggrund, inline-flex til ikon+tekst */
 
 .task_button,
 .task_button:visited {
@@ -70,4 +76,29 @@
 
 .button_arrow_task {
   width: 20px;
+}
+
+/* Video-container: 16:9 via padding-bottom 56.25%, relativ kontekst, skjul overflow, lodret margin */
+
+.video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+/* Video-element: absolut stræk til kanter, fyld 100%, object-fit contain (ingen beskæring), ingen kant */
+.video_wrapper video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 0;
+}
+
+/* lottie */
+#lottie {
+  margin-top: 2rem;
 }

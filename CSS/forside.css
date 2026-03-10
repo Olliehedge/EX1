@@ -1,4 +1,11 @@
-main>section {
+/* Stack image and text inside each theme card with space, even when the section is wrapped in a link */
+.tema_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro {
   display: flex;
   flex-direction: column;
   gap: 2rem;
