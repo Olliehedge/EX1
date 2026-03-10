@@ -1,0 +1,195 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* fonte */
+h1 {
+
+  font-size: var(--h1-size);
+  font-weight: 700;
+  color: var(--text-color1);
+
+}
+
+h2 {
+
+  font-size: var(--h2-size);
+  font-weight: 500;
+  color: var(--text-color1);
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+
+  font-size: var(--h3-size);
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+h4 {
+
+  font-size: var(--h4-size);
+  font-weight: 600;
+  letter-spacing: 0.07rem;
+  color: var(--text-color1);
+  line-height: 1.7;
+}
+
+h5 {
+
+  font-size: var(--h4-size);
+  font-weight: 200;
+  letter-spacing: 0.08rem;
+  color: var(--text-color2);
+}
+
+p,
+a {
+
+  font-size: var(--p-size);
+  font-weight: 200;
+  color: var(--text-color2);
+
+  line-height: 1.7;
+}
+
+/* media */
+
+/***************************************************** S *****************************************************/
+@media (min-width: 481px) {
+  /****************** General *****************/
+
+  h1 {
+    font-size: var(--h1-size-s);
+  }
+
+  h2 {
+    font-size: var(--h2-size-s);
+  }
+
+  h3 {
+    font-size: var(--h3-size-s);
+  }
+
+  h4 {
+    font-size: var(--h4-size-s);
+  }
+
+  p,
+  a {
+    font-size: var(--p-size-s);
+  }
+}
+
+/****************************************************** M *************************************************/
+@media (min-width: 850px) {
+  /********************* General *******************/
+
+  h1 {
+    font-size: var(--h1-size-m);
+  }
+
+  h2 {
+    font-size: var(--h2-size-m);
+  }
+
+  h3 {
+    font-size: var(--h3-size-m);
+  }
+
+  h4 {
+    font-size: var(--h4-size-m);
+  }
+
+  p,
+  a {
+    font-size: var(--p-size-m);
+  }
+
+  /************************** Header *****************/
+  .burger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-header {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+  }
+
+  header .socials {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    justify-self: flex-end;
+  }
+
+  .socials li {
+    padding-left: 1.3rem;
+  }
+
+  .logo-wrapper img {
+    height: 70px;
+    width: auto;
+  }
+
+  .socials img {
+    width: 115%;
+  }
+
+  /********************* Footer ****************/
+
+  .logo-wrapper-footer img {
+    height: 70px;
+    width: auto;
+  }
+
+  .socials-footer li {
+    padding-left: 1.3rem;
+  }
+
+  .socials-footer img {
+    width: 115%;
+  }
+}
+
+/******************************************************** L **************************************************/
+@media (min-width: 1200px) {
+  /********************* General ******************/
+
+  h1 {
+    font-size: var(--h1-size-l);
+  }
+
+  h2 {
+    font-size: var(--h2-size-l);
+  }
+
+  h3 {
+    font-size: var(--h3-size-l);
+  }
+
+  h4 {
+    font-size: var(--h4-size-l);
+  }
+
+  p,
+  a {
+    font-size: var(--p-size-l);
+  }
+}

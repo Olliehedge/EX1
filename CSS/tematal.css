@@ -1,0 +1,73 @@
+.sites {
+  padding: 0 0.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-top: 0.5px solid var(--background-light);
+  border-bottom: 0.5px solid var(--background-light);
+}
+
+.sites_links {
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  transform: translateX(1px);
+}
+
+.tasks {
+  padding: 0 0.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-bottom: 0.5px solid var(--background-light);
+}
+
+
+.tasks_tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-left: 0.5px solid var(--background-light);
+}
+
+.tasks_tasks :last-child {
+  border-top: 0.5px solid var(--background-light);
+}
+
+.tasks_tasks p {
+  padding: 0.5rem;
+}
+
+/* task knapper */
+
+.task_button,
+.task_button:visited {
+  display: inline-flex;
+  width: auto;
+  min-width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  font-size: var(--p-size);
+  background: var(--accent-color);
+  color: var(--text-color1);
+  border: none;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.task_button .button_arrow_task {
+  margin-left: auto;
+}
+
+.task_button:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+.task_button:active {
+  transform: translateY(1px);
+}
+
+.button_arrow_task {
+  width: 20px;
+}

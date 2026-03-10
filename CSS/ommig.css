@@ -1,0 +1,27 @@
+.img_ollie {
+  filter: grayscale(100%);
+}
+
+.mail {
+  display: grid;
+  grid-template-columns: 1fr 5fr
+}
+
+.mobil {
+  display: grid;
+  grid-template-columns: 1fr 5fr
+}
+
+.some_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+}
+
+.some_icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.SoMe {
+  margin-top: 1rem;
+}
