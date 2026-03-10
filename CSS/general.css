@@ -116,118 +116,134 @@ a {
     font-size: var(--p-size-m);
   }
 
-  /************************** Header *****************/
-  .burger {
-    display: none;
+  /******************************************************** L **************************************************/
+  @media (min-width: 1200px) {
+
+    /* /Fonts/ */
+
+    h1 {
+      font-size: var(--h1-size-l);
+    }
+
+    h2 {
+      font-size: var(--h2-size-l);
+    }
+
+    h3 {
+      font-size: var(--h3-size-l);
+    }
+
+    h4 {
+      font-size: var(--h4-size-l);
+    }
+
+    p,
+    a {
+      font-size: var(--p-size-l);
+    }
+
+
+    /* structure  */
+    main {
+      max-width: 1600px;
+      min-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .divider {
+      margin: 0 2rem;
+    }
+
+    /* grid */
+
+    /* forside */
+
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .intro {
+      grid-column: 1 / -1;
+    }
+
+    .grid_1-1>h3 {
+      grid-column: 1 / -1;
+    }
+
+    .tema_button {
+      grid-column: 1 / -1;
+      justify-self: end;
+    }
+
+    /* Om Mig*/
+
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* two equal columns */
+      gap: 1.5rem;
+      align-items: start;
+      /* or center */
+    }
+
+    /* optional: let the image size itself */
+    .img_ollie img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* two columns */
+      gap: 1.5rem;
+    }
+
+    .about_copy {
+      grid-column: 1 / -1;
+    }
+
+    .contact {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      margin-left: 4rem;
+      border-top: 0.5px solid var(--text-color1);
+    }
+
+    .some_icons_2 a img {
+      width: 100px;
+      height: auto;
+    }
+
+
+
+    /* tematal */
+
+
+
+    .breadcrumbs_nav {
+      margin-bottom: 4rem;
+    }
+
+    .tema_grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 1rem;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+    }
+
+
+
+    /* knapper */
+
+    .button_arrow_task {
+      width: 30px;
+    }
   }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-header {
-    display: flex;
-    list-style: none;
-    justify-self: center;
-  }
-
-  header .socials {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    justify-self: flex-end;
-  }
-
-  .socials li {
-    padding-left: 1.3rem;
-  }
-
-  .logo-wrapper img {
-    height: 70px;
-    width: auto;
-  }
-
-  .socials img {
-    width: 115%;
-  }
-
-  /********************* Footer ****************/
-
-  .logo-wrapper-footer img {
-    height: 70px;
-    width: auto;
-  }
-
-  .socials-footer li {
-    padding-left: 1.3rem;
-  }
-
-  .socials-footer img {
-    width: 115%;
-  }
-}
-
-/******************************************************** L **************************************************/
-@media (min-width: 1200px) {
-
-  /* /Fonts/ */
-
-  h1 {
-    font-size: var(--h1-size-l);
-  }
-
-  h2 {
-    font-size: var(--h2-size-l);
-  }
-
-  h3 {
-    font-size: var(--h3-size-l);
-  }
-
-  h4 {
-    font-size: var(--h4-size-l);
-  }
-
-  p,
-  a {
-    font-size: var(--p-size-l);
-  }
-
-
-  /* structure  */
-  body :not(footer) {
-    padding: 0 2rem;
-  }
-
-  .divider {
-    margin: 0 2rem;
-  }
-
-  /* grid */
-
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .intro {
-    grid-column: 1 / -1;
-  }
-
-  main>h3 {
-    grid-column: 1 / -1;
-  }
-
-  .tema_button {
-    grid-column: 1 / -1;
-    justify-self: end;
-  }
-
-
-  /* buttons */
-
-
-
 }

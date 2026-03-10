@@ -22,6 +22,17 @@
   height: 30px;
 }
 
+.some_icons_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+}
+
+.some_icons_2 a img {
+  width: 30px;
+  height: auto;
+}
+
+
 .SoMe {
   margin-top: 1rem;
 }
