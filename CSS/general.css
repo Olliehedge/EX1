@@ -246,6 +246,10 @@ a {
       font-size: var(--h4-size-l);
     }
 
+    h5 {
+      font-size: var(--h5-size-l);
+    }
+
     p,
     a {
       font-size: var(--p-size-l);
