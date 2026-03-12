@@ -78,6 +78,21 @@
   width: 20px;
 }
 
+
+/* tema-button */
+
+.tema_button {
+  width: auto;
+  display: inline-flex;
+  /* span full row */
+  justify-self: end;
+  /* align to the right within that row */
+  margin-left: auto;
+  /* fallback when not in grid */
+
+}
+
+
 /* Video-container: 16:9 via padding-bottom 56.25%, relativ kontekst, skjul overflow, lodret margin */
 
 .video_wrapper {

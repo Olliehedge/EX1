@@ -198,12 +198,29 @@ a:visited {
   color: var(--text-color1);
   text-decoration: none;
   transition: opacity 150ms ease;
+  cursor: pointer;
 }
 
 a:hover {
   text-decoration: none;
   opacity: 0.7;
 }
+
+a:active {
+
+  opacity: 0.5;
+
+}
+
+
+/* JS STYLING */
+
+.figma-status {
+  color: var(--text-color1);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
 
 /* Dividers */
 
@@ -216,4 +233,39 @@ a:hover {
   background: #fff;
   opacity: 0.9;
   margin-bottom: 3rem;
+}
+
+.tema_button,
+.tema_button:visited {
+  display: inline-flex;
+  width: 55vw;
+  align-items: center;
+  gap: 0.5rem;
+  /* space for the arrow */
+  padding: 0.4rem 1.4rem;
+  font-size: var(--h4-size);
+  background: var(--accent-color);
+  color: var(--text-color1);
+  border: none;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  width: auto;
+  justify-content: space-between;
+}
+
+.tema_button .button_arrow {
+  margin-left: auto;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+
+.tema_button:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+.tema_button:active {
+  transform: translateY(1px);
 }
