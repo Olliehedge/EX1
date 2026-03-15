@@ -11,6 +11,7 @@
   position: relative;
   overflow: hidden;
   transform: scale(1);
+
   /* position: relative; gør kortet til reference for absolut placerede børn (overlay-teksten). */
   /* overflow: hidden; skjuler alt, der rager uden for kortets kanter, så overlayet bliver inde i billedet. */
 }
@@ -45,6 +46,8 @@
   font-size: 1.05rem;
   /* bumped size */
 }
+
+
 
 
 .grid_1-1>a {
@@ -122,6 +125,8 @@
   flex-direction: column;
   gap: 1.1rem;
   max-width: 45ch;
+  padding: 0 1rem;
+  /* side padding for grid_1-1-1 cards */
 }
 
 /* Center the middle card and push the last one to the right */

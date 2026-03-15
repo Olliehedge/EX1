@@ -70,8 +70,6 @@ a {
   /****************** General *****************/
 
   main {
-    max-width: 750px;
-    min-width: 481px;
     margin: 0 auto;
     padding: 0 2rem;
   }
@@ -97,6 +95,22 @@ a {
     font-size: var(--p-size-s);
   }
 }
+
+.tema_section.overlay {
+  margin-bottom: 1.5rem;
+}
+
+.grid_1-1-1 {
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  /* stay single column */
+}
+
+.introduction_wrapper {
+  margin-bottom: 2rem;
+}
+
+
 
 /****************************************************** M *************************************************/
 @media (min-width: 850px) {
@@ -189,7 +203,6 @@ a {
   .contact {
     margin-top: 2rem;
     padding-top: 2rem;
-    margin-left: 4rem;
     border-top: 0.5px solid var(--text-color1);
   }
 
@@ -224,6 +237,14 @@ a {
   .button_arrow_task {
     width: 30px;
   }
+
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* stay single column */
+  }
+
+
+
 
   /******************************************************** L **************************************************/
   @media (min-width: 1200px) {
@@ -323,7 +344,6 @@ a {
     .contact {
       margin-top: 2rem;
       padding-top: 2rem;
-      margin-left: 4rem;
       border-top: 0.5px solid var(--text-color1);
     }
 
