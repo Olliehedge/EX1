@@ -1,4 +1,9 @@
 .img_ollie {
+  width: 60%;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  justify-self: start;
   filter: grayscale(100%);
 }
 
@@ -32,16 +37,32 @@
   height: auto;
 }
 
+.contact {
+  margin-top: 2rem;
+}
+
 
 .SoMe {
   margin-top: 1rem;
 }
 
-.ommig h5 {
-  margin-top: 1rem;
-  margin-bottom: 0.1rem;
+
+
+
+
+
+p {
+  max-width: 60ch;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-.ommig img {
-  margin: 2rem 0;
+.tekst2kolonner {
+  column-count: 2;
+
+}
+
+/* Align grid content with heading in ommig2 */
+.ommig .grid_1-1 {
+  justify-items: start;
 }

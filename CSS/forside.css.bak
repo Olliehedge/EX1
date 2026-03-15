@@ -1,0 +1,27 @@
+/* Stack image and text inside each theme card with space, even when the section is wrapped in a link */
+.tema_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  max-width: 65ch
+}
+
+#temaer {
+  margin-bottom: 1rem;
+}
+
+.tema {
+  width: 50%;
+}

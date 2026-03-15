@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forside</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="IMG/fav.png" type="image/png">
+  <link rel="stylesheet" href="CSS/forside.css">
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="CSS/custom.css">
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <a href="index.html"><img src="IMG/logo.png" alt="logo"></a>
+
+      </svg>
+    </div>
+
+    <nav>
+      <ul class="nav-header">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="temaer.html">Temaer</a></li>
+        <li><a href="ommig.html">Om Mig</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr class="divider">
+  <main>
+
+    <div class="grid_1-1">
+      <section>
+
+        <h4>Hej, og velkommen</h4>
+        <h1>TIL MIN
+          PORTFOLIO</h1>
+        <h5>Dette er min portfolio, hvor jeg præsenterer de projekter og temaer, jeg har arbejdet med gennem 1. semester
+          på multimediedesigneruddannelsen på Erhvervsakademi København.
+          Tak fordi I kigger med.
+
+          -Ollie Hartmann</h5>
+        <div class="tema_button_wrap">
+          <a class="tema_button" href="temaer.html"> <span>Se alle temaer</span><span class="button_arrow"><img
+                src="IMG/arrow.png" alt="billede af pil"></span></a>
+        </div>
+
+      </section>
+      <section>
+        <h4>Udvalgt tema</h4>
+        <a class="tema" href="tema3.html">
+          <section class="tema_section">
+            <img class="full-bleed card" src="IMG/mojopin.webp" alt="Tema 3">
+            <div>
+              <h4>TEMA 3</h4>
+              <p>I UX/UI-forløbet arbejdede jeg med design af digitale brugergrænseflader med fokus på brugerbehov. Jeg
+                brugte metoder som interviews, spørgeskemaer og brugertest samt Figma til design og prototyping.
+                Samtidig
+                arbejdede vi med responsivt design, accessibility og etiske overvejelser i digitale løsninger.</p>
+            </div>
+          </section>
+        </a>
+      </section>
+    </div>
+
+
+
+
+
+  </main>
+  <hr class="divider">
+  <footer>
+    <p>Ollie Hartmann © 2026 Copyright</p>
+  </footer>
+
+</body>
+
+</html>

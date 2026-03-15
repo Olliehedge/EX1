@@ -122,13 +122,9 @@ header {
 /* BASE */
 
 main {
-  gap: 1.5rem;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  margin: 3 auto;
 }
-
-
 
 
 /* krumme */
@@ -182,21 +178,10 @@ body {
   background: var(--background-color);
   font-family: sans-serif;
   overflow-x: hidden;
-
-
 }
 
 footer {
-  display: grid;
-  place-items: center;
-  min-height: 70px;
-  padding: 0;
-}
-
-footer p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.4;
+  justify-items: center;
 }
 
 
@@ -246,10 +231,15 @@ a:active {
   margin-bottom: 3rem;
 }
 
+.tema_button_wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
 .tema_button,
 .tema_button:visited {
   display: inline-flex;
-  margin-top: 7rem;
   width: 55vw;
   align-items: center;
   gap: 0.5rem;
@@ -280,22 +270,4 @@ a:active {
 
 .tema_button:active {
   transform: translateY(1px);
-}
-
-/* scroll hint */
-
-.scroll-hint {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 220px;
-  /* how tall the fade is */
-  pointer-events: none;
-  /* don’t block clicks */
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.95),
-      rgba(0, 0, 0, 0));
-  z-index: 999;
-  /* above content, below header if needed */
 }

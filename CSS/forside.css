@@ -3,8 +3,57 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 5rem;
 
+}
+
+/* Overlay text on theme cards */
+.tema_section.overlay {
+  position: relative;
+  overflow: hidden;
+  transform: scale(1);
+  /* position: relative; gør kortet til reference for absolut placerede børn (overlay-teksten). */
+  /* overflow: hidden; skjuler alt, der rager uden for kortets kanter, så overlayet bliver inde i billedet. */
+}
+
+.tema_section.overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  padding: 1.25rem;
+}
+
+.overlay-caption h4 {
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.08rem;
+  font-size: 1.3rem;
+  /* bumped size */
+}
+
+.overlay-caption p {
+  margin: 0;
+  color: #f2f2f2;
+  line-height: 1.5;
+  font-size: 1.05rem;
+  /* bumped size */
+}
+
+
+.grid_1-1>a {
+  display: block;
+  height: 100%;
+}
+
+.grid_1-1 .tema_section {
+  height: 100%;
 }
 
 .intro {
@@ -53,4 +102,37 @@
 
 .tema_button:active {
   transform: translateY(1px);
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+  justify-items: start;
+  /* default left alignment */
+}
+
+.semester_sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 45ch;
+}
+
+/* Center the middle card and push the last one to the right */
+.grid_1-1-1 .semester_sections:nth-child(2) {
+  justify-self: center;
+}
+
+.grid_1-1-1 .semester_sections:nth-child(3) {
+  justify-self: end;
+}
+
+.intro h5 {
+  max-width: 80ch;
 }
