@@ -299,3 +299,18 @@ a:active {
   z-index: 999;
   /* above content, below header if needed */
 }
+
+.scroll-hint.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tema_section.overlay {
+  margin-bottom: 1.5rem;
+}
+
+
+
+.introduction_wrapper {
+  margin-bottom: 2rem;
+}

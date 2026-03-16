@@ -141,3 +141,11 @@
 .intro h5 {
   max-width: 80ch;
 }
+
+h5 {
+  margin-top: 1rem;
+}
+
+.tema_column h3 {
+  margin-bottom: 1rem;
+}

@@ -1,9 +1,16 @@
 const hint = document.querySelector('.scroll-hint');
-    const footer = document.querySelector('footer');
+const footer = document.querySelector('footer');
 
-    const observer = new IntersectionObserver(([entry]) => {
-      hint.style.opacity = entry.isIntersecting ? '0' : '1';
-      hint.style.pointerEvents = entry.isIntersecting ? 'none' : 'auto';
-    }, { threshold: 0.1 });
+if (hint && footer) {
+  new IntersectionObserver(
+    ([entry]) => {
+      hint.classList.toggle('hidden', entry.isIntersecting);
+    },
+    { threshold: 0.1 }
+  ).observe(footer);
+}
 
-    if (hint && footer) observer.observe(footer);
+    
+
+
+

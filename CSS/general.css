@@ -94,6 +94,11 @@ a {
   a {
     font-size: var(--p-size-s);
   }
+
+  /* Tema pages: add spacing when stacked */
+  .tema_grid_1-1 > * {
+    margin-bottom: 3rem;
+  }
 }
 
 .tema_section.overlay {
@@ -109,6 +114,8 @@ a {
 .introduction_wrapper {
   margin-bottom: 2rem;
 }
+
+
 
 
 
@@ -230,6 +237,10 @@ a {
 
   }
 
+  /* remove extra stack spacing once the grid is two columns */
+  .tema_grid_1-1 > * {
+    margin-bottom: 0;
+  }
 
 
   /* knapper */
@@ -242,6 +253,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     /* stay single column */
   }
+
 
 
 
