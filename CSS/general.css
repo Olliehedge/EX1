@@ -36,6 +36,12 @@ h3 {
   color: var(--text-color1);
 }
 
+.h3-look {
+  font-size: var(--h3-size);
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
 h4 {
 
   font-size: var(--h4-size);
@@ -91,6 +97,10 @@ a {
   }
 
   h3 {
+    font-size: var(--h3-size-s);
+  }
+
+  .h3-look {
     font-size: var(--h3-size-s);
   }
 
@@ -151,6 +161,10 @@ a {
   }
 
   h3 {
+    font-size: var(--h3-size-m);
+  }
+
+  .h3-look {
     font-size: var(--h3-size-m);
   }
 
@@ -288,6 +302,10 @@ a {
     }
 
     h3 {
+      font-size: var(--h3-size-l);
+    }
+
+    .h3-look {
       font-size: var(--h3-size-l);
     }
 
