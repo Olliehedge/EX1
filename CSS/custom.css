@@ -23,14 +23,11 @@
   /* Farver */
   --background-color: #000000;
   --background-light: #fffefd;
-  --background-light-transparent: #fffefda0;
   --text-color1: #ffffff;
   --text-color2: rgb(217, 217, 217);
-  --text-color-light: #000000;
   --accent-color: rgb(255, 111, 0);
 
   /* fonte */
-
 
   /* H1 */
   --h1-size: 3.5rem;
@@ -55,12 +52,6 @@
   --h4-size-s: 1.1rem;
   --h4-size-m: 1.2rem;
   --h4-size-l: 1.3rem;
-
-  /* H5 */
-  --h5-size: 1.0rem;
-  --h5-size-s: 1.1rem;
-  --h5-size-m: 1.2rem;
-  --h5-size-l: 1.3rem;
 
   /* P */
   --p-size: 0.8rem;
@@ -180,7 +171,7 @@ main {
 
 body {
   background: var(--background-color);
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
 
 
@@ -290,14 +281,14 @@ a:active {
   right: 0;
   bottom: 0;
   height: 220px;
-  /* how tall the fade is */
+
   pointer-events: none;
-  /* don’t block clicks */
+
   background: linear-gradient(to top,
       rgba(0, 0, 0, 0.95),
       rgba(0, 0, 0, 0));
   z-index: 999;
-  /* above content, below header if needed */
+
 }
 
 .scroll-hint.hidden {
